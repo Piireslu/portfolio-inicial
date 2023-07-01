@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Luciana Pires</title>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -11,19 +12,64 @@
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#Projeto">Projeto</a></li>
-                <li><a href="#Contato">Contato</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </header>  
+    </header>
     <main>
-        <section id="Projetos">
-            <h2>Meus projetos</h2>
-            <img src="imagem_projeto1.jpg" alt="Projeto 1">
-            <h3>Nome do Projeto 1</h3>
-            <p>Descrição breve do projeto 1.</p>
-            <div class="Project"></div>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou uma profissional formada em UX/UI apaixonada por criar interfaces responsivas e proporcionar experiências incríveis para os usuários. Meu objetivo é combinar a estética visual com a usabilidade, garantindo que cada interação seja intuitiva e memorável.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <p>Possuo habilidades sólidas em:</p>
+            <ul>
+                <li>HTML5, CSS3 e JavaScript para desenvolvimento Front-End.</li>
+                <li>Framework React para criação de aplicações web interativas.</li>
+                <li>Domínio de técnicas de design responsivo para garantir que minhas criações se adaptem perfeitamente a diferentes dispositivos e tamanhos de tela.</li>
+                <li>Conhecimentos em UX/UI, aplicando melhores práticas de design centrado no usuário e fluxos de interação otimizados.</li>
+                <li>Experiência em colaboração em equipe, valorizando a comunicação eficiente e a troca de conhecimentos.</li>
+            </ul>
+        </section>
+        <section id="Atualizacoes">
+            <h2>Atualização contínua</h2>
+            <p>Estou sempre me mantendo atualizada sobre as últimas tendências e melhores práticas do mercado, participando de eventos, workshops e cursos relacionados à área de UX/UI. Acredito que a aprendizagem contínua é essencial para oferecer soluções inovadoras e eficazes aos usuários.</p>
+        </section>
+        <section id="Objetivo">
+            <h2>Objetivo</h2>
+            <p>Meu principal objetivo é agregar valor à empresa, ao mercado e aos usuários, aplicando os conhecimentos adquiridos ao longo da minha carreira. Busco constantemente novos desafios e oportunidades que me permitam expandir minhas habilidades e contribuir para projetos significativos.
+                Se você está procurando um profissional comprometido, proativo e colaborativo, estou ansiosa para trabalhar em projetos desafiadores e compartilhar minha paixão pelo design e pela experiência do usuário. Vamos criar algo incrível juntos!</p>
+        </section>
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="project">
+                <img src="imagem_projeto1.jpg" alt="Projeto 1">
+                <h3>Nome do Projeto 1</h3>
+                <p>Descrição breve do projeto 1.</p>
+            </div>
+            <div class="project">
+                <img src="imagem_projeto2.jpg" alt="Projeto 2">
+                <h3>Nome do Projeto 2</h3>
+                <p>Descrição breve do projeto 2.</p>
+            </div>
+            <!-- Adicionar mais projetos conforme necessário -->
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo através do formulário abaixo:</p>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
