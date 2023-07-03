@@ -2,19 +2,75 @@
 body, h1, h2, h3, p, ul, li, form {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'montserrat';
 }
 
 /* Estilos gerais */
 body {
-    background-color: #f8f8f8;
+    background-color: #b6928d50;
 }
 
 header {
-    background-color: #f3f732;
+    background-color: #5a300ecb;
     color: #000000;
     padding: 20px;
 }
+
+.perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0a0a0a;
+    image-rendering: crisp-edges;
+}
+
+.perfil-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.titulo {
+    margin-left: 20px; /* Espaçamento entre a foto e o título */
+    color: #eb9f3d;
+    margin-bottom: 0;
+}
+
+.menu {
+    margin-top: 20px; /* Adiciona um espaço vertical abaixo da foto de perfil */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.sidebar {
+    background-color: #3b200acb; 
+    padding: 20px;  
+}
+
+.balao {
+    position: relative;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .balao:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f1f1f1;
+  }
+
+  .balao h2 {
+    margin-top: 0;
+  }
 
 nav ul {
     list-style: none;
@@ -30,7 +86,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #000000;
+    color: #eb9f3d;
     text-decoration: none;
 }
 
@@ -41,14 +97,14 @@ main {
 }
 
 h1 {
-    color: #db3cdb;
+    color: #eb9f3d;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 
 h2 {
-    color: #db3cdb;
+    color: #eb9f3d;
     font-size: 20px;
     margin-bottom: 10px;
 }
