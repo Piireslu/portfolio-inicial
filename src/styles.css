@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100;500;800 & family= Poppins:wght@400;500;700;800 & display=swap' );
+@import url('https://fonts.googleapis.com/css2? family= Cedarville+Cursive & family= Montserrat:wght@100;500;800 & family= Poppins:wght@400;500;700; 800 & display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+:root{
+    --color-white: #fff;
+    --color-brown: #231710;
+    --color-gray: #ddd3ca;
+    --color-beige: #aa9280;
+    --color-black: #000000
 }
 
 html {
@@ -34,23 +42,67 @@ body {
     background: #aa9280;
 }
 
-.person-content div h1 {
-    color: #231710;
+.person-content div h1{
+    color: transparent;
     padding: 0px 4px;
     font-size: 4rem;
     line-height: 6rem;
+    animation: written_tex .5s ease forwards;
 }
 
 .person-content div h2 { 
-    color: #231710;
+    color: transparent;
     padding: 0px 4px;
     font-size: 5.5rem;
     line-height: 6rem;
+    animation: written_tex .5s ease forwards;
 }
 
-.person-content div h3 { 
-    color: #ddd3ca;
+.person-content div h3 {
+    color: transparent;
     padding: 0px 4px;
     font-size: 1.8em;
     line-height: 6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(40) forwards; /* Ajuste a duração aqui */
+    animation-delay: 3s;
+}
+
+.person-content div h1:nth-child(1){
+    animation-delay: 1s;
+}
+
+.person-content div h2:nth-child(2){
+    animation-delay: 2s;
+}
+
+.person-content div h3:nth-child(3){
+    animation: written_tex_name .5s ease for;
+    animation-delay: 3s;
+}
+
+.person-content div h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes written_tex {
+    100%{
+        color: var(--color-white);
+    }
+}
+
+@keyframes written_tex_name {
+    100%{
+        color: var(--color-brown);
+    }
+}
+
+@keyframes typing {
+    0% { width: 0; color: transparent; }
+    100% { width: 100%; color: var(--color-black); }
 }
