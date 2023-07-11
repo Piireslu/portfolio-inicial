@@ -28,8 +28,8 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background: #ddd3ca;
 
+    background: #aa9280;
 }
 
 .person-content{
@@ -39,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #aa9280;
+    background: #ddd3ca;
 }
 
 .person-content div h1{
@@ -51,7 +51,7 @@ body {
 }
 
 .person-content div h2 { 
-    color: transparent;
+    color: transparent
     padding: 0px 4px;
     font-size: 5.5rem;
     line-height: 6rem;
@@ -92,7 +92,7 @@ body {
 
 @keyframes written_tex {
     100%{
-        color: var(--color-white);
+        color: #000000;
     }
 }
 
