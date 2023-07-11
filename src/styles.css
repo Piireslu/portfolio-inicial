@@ -19,5 +19,38 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
-    
+    align-items: center;
+    background: #ddd3ca;
+
+}
+
+.person-content{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #aa9280;
+}
+
+.person-content div h1 {
+    color: #231710;
+    padding: 0px 4px;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.person-content div h2 { 
+    color: #231710;
+    padding: 0px 4px;
+    font-size: 5.5rem;
+    line-height: 6rem;
+}
+
+.person-content div h3 { 
+    color: #ddd3ca;
+    padding: 0px 4px;
+    font-size: 1.8em;
+    line-height: 6rem;
 }
