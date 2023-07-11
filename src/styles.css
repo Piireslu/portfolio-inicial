@@ -1,133 +1,23 @@
-/* Reset de estilos */
-body, h1, h2, h3, p, ul, li, form {
-    margin: 0;
-    padding: 0;
-    font-family: 'montserrat';
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100;500;800 & family= Poppins:wght@400;500;700;800 & display=swap' );
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-/* Estilos gerais */
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
 body {
-    background-color: #b6928d50;
+    font-family: 'poppins', sans-serif;
 }
 
-header {
-    background-color: #5a300ecb;
-    color: #000000;
-    padding: 20px;
-}
-
-.perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #0a0a0a;
-    image-rendering: crisp-edges;
-}
-
-.perfil-container {
+#person {
+    height: 100vh;
+    width: 100%;
     display: flex;
-    align-items: center;
-
-}
-
-.titulo {
-    margin-left: 20px; /* Espaçamento entre a foto e o título */
-    color: #eb9f3d;
-    margin-bottom: 0;
-}
-
-.menu {
-    margin-top: 20px; /* Adiciona um espaço vertical abaixo da foto de perfil */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-.sidebar {
-    background-color: #3b200acb; 
-    padding: 20px;  
-}
-
-.balao {
-    position: relative;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-  }
-
-  .balao:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #f1f1f1;
-  }
-
-  .balao h2 {
-    margin-top: 0;
-  }
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-nav ul li a {
-    color: #eb9f3d;
-    text-decoration: none;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    color: #eb9f3d;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-
-h2 {
-    color: #eb9f3d;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-.project img {
-    width: 100%;
-    max-width: 300px;
-}
-
-form label, form input, form textarea {
-    display: block;
-    margin-bottom: 10px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 5px;
+    
 }
