@@ -102,6 +102,12 @@ body {
 
 }
 
+.stacks-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 .person-name {
     margin-top: 11rem;
 }
@@ -161,9 +167,10 @@ body {
     background-repeat: no-repeat;
 }
 
-.links img {
-    width: 30px;
-    height: 30px;
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .profile-photo {
@@ -174,7 +181,61 @@ body {
     height: 200px;
     margin: 20px 20px;
     border-radius: 50%;
-    image-rendering: crisp-edges;
+    overflow: hidden; 
+    opacity: 0; /* Inicialmente oculta a div */
+    animation: fadeIn .5s ease-in-out forwards; /* Curva de animação suave */
+    animation-delay: 2s;
+}
+
+.stacks-content.fadeIn {
+    opacity: 0; /* Inicialmente oculta a div */
+    animation: fadeIn .5s ease forwards;
+    animation-delay: 2s;
+}
+
+.profile-photo.fadeIn {
+    opacity: 0; /* Inicialmente oculta a div */
+    animation: fadeIn .5s ease forwards;
+    animation-delay: 2s;
+}
+
+.links {
+    opacity: 0; /* Essa linha para inicialmente ocultar a div */
+    animation: fadeIn .5s ease forwards;
+    animation-delay: 2s;
+}
+
+.links img {
+    width: 30px;
+    height: 30px;
+    transition: transform .3s ease; /* Movido para cima */
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.links img:hover {
+    transform: scale(1.2);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes written_tex {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: var(--color-brown);
+    }
 }
 
 @keyframes written_tex {
