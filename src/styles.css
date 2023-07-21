@@ -1,12 +1,15 @@
+/* Importando fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2? family= Cedarville+Cursive & family= Montserrat:wght@100;500;800 & family= Poppins:wght@400;500;700; 800 & display=swap');
 
+/* Resete de estilos para elementos */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-  }
-  
-  :root {
+}
+ 
+/* Definindo variáveis de cores no root do documento */
+:root {
     --color-white: #fff;
     --color-brown: #231710;
     --color-brown01: #966d68;
@@ -16,26 +19,26 @@
     --color-beige: #aa9280;
     --color-black: #000000;
     
-  }
-  
-  html {
+}
+/* Configurações gerais para o documento */  
+html {
     scroll-behavior: smooth;
     font-size: 10px;
-  }
-  
-  body {
+}
+/* Configuração da fonte padrão para o corpo do documento */  
+body {
     font-family: 'poppins', sans-serif;
-  }
-  
-  #person {
+}
+/* Estilização da seção 'person' */  
+#person {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     background: #aa9280;
-  }
-  
-  .person-content {
+}
+/* Estilização do conteúdo da seção 'person' */  
+.person-content {
     height: 100%;
     width: 50%;
     display: flex;
@@ -44,56 +47,56 @@
     flex-direction: column;
     font-family: 'poppins';
     background: #ddd3ca;
-  }
-  
-  .person-content div h1,
-  .person-content div h2,
-  .person-content div h3 {
+}
+/* Configuração da animação para a escrita das palavras */  
+.person-content div h1,
+.person-content div h2,
+.person-content div h3 {
     color: transparent;
     padding: 0px 4px;
     line-height: 6rem;
     animation: written_tex .5s ease forwards;
-  }
-  
-  .person-content div h1 {
+}
+/* Configuração específica para o h1 da seção 'person-content' */  
+.person-content div h1 {
     font-size: 4rem;
-  }
-  
-  .person-content div h2 {
+}
+/* Configuração específica para o h2 da seção 'person-content' */  
+.person-content div h2 {
     font-size: 5.5rem;
-  }
-  
-  .person-content div h3 {
+}
+/* Configuração específica para o h3 da seção 'person-content' */  
+.person-content div h3 {
     font-size: 1.8em;
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(40) forwards;
     animation-delay: 3s;
-  }
-  
-  .person-content div h1:nth-child(1) {
+}
+ /* Configuração para adicionar delay na animação do primeiro h1 */ 
+.person-content div h1:nth-child(1) {
     animation-delay: 1s;
-  }
-  
-  .person-content div h2:nth-child(2) {
+}
+/* Configuração para adicionar delay na animação do segundo h2 */  
+.person-content div h2:nth-child(2) {
     animation-delay: 2s;
-  }
-  
-  .person-content div h3:nth-child(3) {
+}
+/* Configuração para adicionar delay na animação do terceiro h3 */  
+.person-content div h3:nth-child(3) {
     animation: written_tex_name .5s ease forwards;
     animation-delay: 3s;
-  }
-  
-  .person-content div h1 span {
+}
+/* Estilização dos h1 dentro de .person-content div com pseudoelemento span */  
+.person-content div h1 span {
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
     height: 50px;
-  }
-  
-  .person-background {
+}
+/* Estilização da seção de background da seção 'person' */  
+.person-background {
     height: 100vh;
     width: 50%;
     display: flex;
@@ -104,61 +107,61 @@
     background-size: auto;
     background-position: right center;
     background-repeat: no-repeat;
-  }
-  
-  .person-name {
+}
+/* Estilização da seção de nome na seção 'person' */  
+.person-name {
     margin-top: 11rem;
-  }
-  
-  .stack-content {
+}
+/* Estilização da seção de stacks na seção 'person' */  
+.stack-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 6rem;
     float: left;
-  }
-  
-  .stacks-content {
+}
+/* Estilização do conteúdo de stacks na seção 'person' */  
+.stacks-content {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     filter: brightness(0.8);
-  }
-  
-  .stack-content h3 {
+}
+/* Estilização da lista de stacks */  
+.stack-content h3 {
     color: var(--color-brown);
     font-size: 1.15rem;
     margin-left: 20px;
-  }
-  
-  .stacks {
+}
+/* Estilização dos itens da lista de stacks */  
+.stacks {
     display: flex;
     align-items: center;
     flex-direction: row;
-  }
-  
-  .stacks ul li {
+}
+/* Estilização das imagens nos itens da lista de stacks */  
+.stacks ul li {
     display: flex;
     align-items: center;
     position: relative;
     margin: 10px;
     padding: 10px;
     list-style: none;
-  }
-  
-  .stacks ul li img {
+}
+/* Estilização das imagens nos itens da lista de stacks */
+.stacks ul li img {
     width: 30px;
     height: auto;
     transition: transform .3s ease;
-  }
-  
-  .stacks ul li div img:hover {
+}
+/* Estilização do efeito de hover nas imagens dos itens da lista de stacks */
+.stacks ul li div img:hover {
     transform: scale(1.2);
     cursor: pointer;
-  }
-  
-  .stacks ul li div:hover::after {
+}
+/* Estilização do efeito de hover nas divs dos itens da lista de stacks */
+.stacks ul li div:hover::after {
     content: attr(data);
     position: absolute;
     top: 50px;
@@ -166,15 +169,15 @@
     width: 20px;
     height: 20px;
     color: var(--color-black);
-  }
-  
-  .profile-photo img {
+}
+/* Estilização da seção da foto de perfil */  
+.profile-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .profile-photo {
+}
+/* Estilização da seção da foto de perfil */  
+.profile-photo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,27 +190,27 @@
     animation: fadeIn .5s ease-in-out forwards;
     animation-delay: 2s;
     border: 4px solid var(--color-beige);
-  }
-  
-  .stacks-content.fadeIn {
+}
+/* Estilização da animação fadeIn para stacks-content */  
+.stacks-content.fadeIn {
     opacity: 0;
     animation: fadeIn .5s ease forwards;
     animation-delay: 2s;
-  }
-  
-  .profile-photo.fadeIn {
+}
+/* Estilização da animação fadeIn para profile-photo */  
+.profile-photo.fadeIn {
     opacity: 0;
     animation: fadeIn .5s ease forwards;
     animation-delay: 2s;
-  }
-  
-  .links {
+}
+/* Estilização da animação fadeIn para links */ 
+.links {
     opacity: 0;
     animation: fadeIn .5s ease forwards;
     animation-delay: 2s;
-  }
-  
-  .links a img {
+}
+/* Estilização dos links de mídia social */  
+.links a img {
     width: 30px;
     height: 30px;
     margin: 8px;
@@ -215,84 +218,86 @@
     transform: scale(1);
     cursor: pointer;
     filter: brightness(0.8);
-  }
-  
-  .links a img:hover {
+}
+/* Estilização do efeito de hover nos links de mídia social */ 
+.links a img:hover {
     filter: brightness(1);
-  }
-  
-  .links img:hover {
+}
+/* Estilização do efeito de hover nas imagens dos links de mídia social */  
+.links img:hover {
     transform: scale(1.2);
-  }
-  
-  .about {
+}
+/* Estilização da seção 'about' */  
+.about {
     width: 100%;
     padding: 100%;
     display: flex;
     color: var(--color-black);
     background: var(--color-black);
-  }
-  
-  .background-about {
+}
+/* Estilização do background da seção 'about' */  
+.background-about {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .background-about {
+}
+/* Estilização do background da seção 'about' com fundo da cor #aa9280 */  
+.background-about {
     display: flex;
     background-color: #aa9280;
-  }
-  
-  .img-wrapper {
+}
+/* Estilização do wrapper da imagem na seção 'about' */  
+.img-wrapper {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-  }
-  
-  .img-wrapper img {
+}
+/* Estilização da imagem na seção 'about' */  
+.img-wrapper img {
     height: 50%;
     width: 500%;
-  }
+}
   
 #about .background-about {
     display: flex;
     position: center;
     height: 100vh;
     width: 100%;
-  }
+}
+/* Estilização do título da seção 'about' */
 
 #about .background-about::before h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#about .background-about::after h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
-  
-#about .background-about::before h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-  
+
+/* Estilização do título da seção 'about' com fundo da cor #aa9280 */    
 #about .about-content {
     flex: 1;
     background-color: #aa9280;
     padding: 30px;
 }
-  
-  #about .img-wrapper {
+/* Estilização do wrapper da imagem na seção 'about' */  
+#about .img-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40%;
-  }
-  
-  .about-content {
+}
+/* Estilização do conteúdo da seção 'about' com posição relativa */  
+.about-content {
     position: relative;
-  }
-  
-  .about-content::before {
+}
+/* Estilização do before para criar borda externa na seção 'about' */  
+.about-content::before {
     content: "";
     position: absolute;
     top: -20px;
@@ -302,9 +307,9 @@
     background-color: var(--color);
     border-radius: 20px;
     z-index: -1;
-  }
-  
-  .about-content::after {
+}
+/* Estilização do after para criar borda interna na seção 'about' */  
+.about-content::after {
     content: "";
     position: absolute;
     top: -10px;
@@ -314,19 +319,19 @@
     background-color: var(--color-brown);
     border-radius: 10px;
     z-index: -1;
-  }
+}
   
-  
-  .speech-bubble {
+/* Estilização da fala no 'about' */  
+.speech-bubble {
     position: relative;
     background-color: var(--color-gray);
     border-radius: 10px;
     padding: 10px;
     max-width: 80%;
     margin-bottom: 20px;
-  }
-  
-  .speech-bubble::before {
+}
+/* Estilização da ponta da fala no 'about' */  
+.speech-bubble::before {
     content: "";
     position: absolute;
     top: -20px;
@@ -335,13 +340,13 @@
     border-width: 10px;
     border-style: solid;
     border-color: transparent transparent #231710 transparent;
-  }
-
-  .speech-bubble p {
+}
+/* Estilização do parágrafo dentro da fala no 'about' */
+.speech-bubble p {
     margin-bottom: 15px;
-  }
-  
-  .profile-sobre-mim {
+}
+/* Estilização da imagem de perfil no 'about' */  
+.profile-sobre-mim {
     position: relative;
     width: 200px;
     height: 200px;
@@ -349,9 +354,9 @@
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--color-gray);
-  }
-  
-  .profile-sobre-mim::before {
+}
+/* Estilização da imagem de perfil no 'about' com fundo de cor #aa9280 */  
+.profile-sobre-mim::before {
     content: '';
     position: absolute;
     top: 0;
@@ -360,15 +365,15 @@
     height: 100%;
     transform: translateY(-50%);
     z-index: 1;
-  }
-  
-  .profile-sobre-mim img {
+}
+/* Estilização da imagem de perfil no 'about' */  
+.profile-sobre-mim img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .body {
+}
+/* Estilização da classe .body */
+.body {
     background: #977b66;
     transition: all .5s;
     padding: 1px;
@@ -377,6 +382,7 @@
     align-items: center;
     justify-content: center;
 }
+/* Estilização da classe .veen */
 .veen {
     width: 70%;
     margin: 100px auto;
@@ -402,7 +408,9 @@
     position: relative;
     color: #aa9280;
     transition: all .25s;
-}
+}/* Fim da estilização do botão escuro na classe .veen */
+
+/* Estilização do botão escuro com efeito de movimento na classe .veen */
 .veen button.dark {
     border-color: var(--color-gray);
     background: #231710;
@@ -411,10 +419,11 @@
     border-color: #231710;
     background: #231710;
 }
+/* Estilização dos parágrafos dentro da classe .splits */
 .veen .splits p {
     font-size: 18px;
 }
-
+/* Estilização do botão ativo na classe .splits */
 .veen button:active {
     box-shadow: none;
 }
@@ -506,34 +515,41 @@
 #projects {
     background-color: #f5f5f5;
     padding: 20px;
-  }
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
   
-  .carousel {
+.carousel {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-  }
+}
   
-  .carousel-item {
+.carousel-item {
     flex-shrink: 0;
     width: 300px;
     height: 200px;
     background-color: #ccc;
     margin-right: 10px;
     scroll-snap-align: start;
-  }
+}
   
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.carousel-item {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 40px;
+  margin: 10px;
+}
   
 .message textarea {
         width: 100%;
         box-sizing: border-box;
         min-height: 100px;
         resize: relative;
-    }
+}
 #projects {
     height: 100vh;
     width: 100%;
@@ -574,97 +590,96 @@
 
 /*Responsividade*/
 @media (max-width: 767px) {
-    .veen {
-        padding: 5px;
-        margin: 0;
-        width: 100%;
-        display: block;
-    }
-
-    .veen>.wrapper {
-        position: relative;
-        height: auto;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .veen>div {
-        display: inline-block;
-    }
-
-    .splits {
-        width: 50%;
-        background: #231710;
-        float: left;
-    }
-
-    .splits button {
-        width: 100%;
-        border-radius: 0;
-        background: #505050;
-        border: 0;
-        opacity: .7;
-    }
-
-    .splits button.active {
-        opacity: 1;
-    }
-
-    .splits button.active {
-        opacity: 1;
-        background: #231710;
-    }
-
-    .splits.rgstr-btn button.active {
-        background: #231710;
-    }
-
-    .splits p {
-        display: none;
-    }
-
-    .veen>.wrapper.move {
-        left: 0%;
-    }
-
+.veen {
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
 }
 
+.veen>.wrapper {
+  position: relative;
+  height: auto;
+  top: 0;
+  left: 0;
+   width: 100%;
+}
 
+.veen>div {
+  display: inline-block;
+}
 
+.splits {
+  width: 50%;
+  background: #231710;
+  float: left;
+}
+
+.splits button {
+  width: 100%;
+  border-radius: 0;
+  background: #505050;
+  border: 0;
+  opacity: .7;
+}
+
+.splits button.active {
+  opacity: 1;
+}
+
+/* Estilização do botão ativo na classe .splits com fundo de cor #231710 */
+.splits button.active {
+  opacity: 1;
+  background: #231710;
+}
+
+.splits.rgstr-btn button.active {
+  background: #231710;
+}
+
+.splits p {
+  display: none;
+}
+/* Estilização da classe .veen para quando é movida */
+.veen>.wrapper.move {
+  left: 0%;
+}
+
+/* Estilização do input quando preenchido automaticamente pelo navegador */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-    box-shadow: inset 0 0 0 50px #231710;
+  box-shadow: inset 0 0 0 50px #231710;
+}
+/* Configuração da animação fadeIn para elementos */  
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+/* Configuração da animação para escrita de texto */  
+@keyframes written_tex {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: var(--color-brown);
+  }
+}
+/* Configuração da animação para escrita de nome */
+@keyframes written_tex_name {
+    100% {
+      color: var(--color-brown);
+    }
 }
   
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes written_tex {
-    0% {
-      color: transparent;
-    }
-    100% {
-      color: var(--color-brown);
-    }
-  }
-  
-  @keyframes written_tex_name {
-    100% {
-      color: var(--color-brown);
-    }
-  }
-  
-  @keyframes typing {
+@keyframes typing {
     0% {
       width: 0;
       color: transparent;
@@ -674,12 +689,12 @@ select:-webkit-autofill {
       color: var(--color-black);
     }
   }
-  
-  @media (max-width: 768px) {
+/* Responsividade para telas menores que 768px */ 
+@media (max-width: 768px) {
+    /* Estilização da classe .person-content */
     .person-content {
       width: 100%;
     }
-  }
-  
+}
   
   

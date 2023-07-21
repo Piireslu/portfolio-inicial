@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Luciana Pires</title>
+    <!-- Importa fontes do Google Fonts -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Importa bibliotecas externas (jQuery, Bootstrap, Slick Carousel) -->
     <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <style>
-      .carousel-item {
-        text-align: center;
-        background: #f5f5f5;
-        padding: 40px;
-        margin: 10px;
-      }
-    </style>
 </head>
 <body>
+    <!-- Seção para a apresentação pessoal -->
     <section id="person" style="height: 100vh;">
+        <!-- Conteúdo da seção de apresentação -->
         <div class="person-content">
+            <!-- Nome, título e descrição do profissional -->
             <div class="person-name">
                 <h1>Portfólio</h1>
                 <h2>Luciana Pires</h2>
                 <h3>Front-End Developer</h3>
             </div>
+            <!-- Stacks (Tecnologias) em que a pessoa é especializada -->
             <div class="stacks-content fadeIn">
                 <div class="stacks">
+                    <!-- Lista de tecnologias com ícones -->
                     <ul>
                         <li>
                             <div data="HTML">
@@ -61,6 +60,7 @@
                 </div>
             </div>
         </div>
+        <!-- Background da seção de apresentação com foto e links sociais -->
         <div class="person-background">
             <div class="profile-photo fadeIn">
                 <img src="./image/Perfil.jpeg" alt="Foto-perfil">
@@ -72,15 +72,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Seção "Sobre Mim" -->
     <section id="about">
         <div class="background-about">
             <div class="img-wrapper">
+                <!-- Imagem de perfil para "Sobre Mim" -->
                 <div class="profile-sobre-mim">
                     <img src="./image/Perfil-3.jpeg" alt="Foto-sobre-mim">
                 </div>
             </div>
             <div class="about-content">
+                <!-- Caixa de informações "Sobre Mim" -->
                 <div class="speech-bubble">
+                    <!-- Texto de descrição pessoal -->
                     <h2>Sobre Mim</h2>
                     <p>Meu nome é Luciana Pires e sou uma desenvolvedora Front-end com paixão pela criação de experiências digitais excepcionais. Nos últimos dois anos, tenho trabalhado com dedicação para aprimorar minhas habilidades e conhecimentos na área, buscando sempre entregar resultados de qualidade e impacto.</p>
                     <p>Minha jornada na área começou com a minha formação em UX/UI Design. Desde então, tenho me dedicado a aprimorar minhas habilidades técnicas e criativas em diversas áreas, incluindo [lista de habilidades relevantes, como design de interface, desenvolvimento web, etc.].</p>
@@ -89,21 +94,23 @@
                     <p>Além do meu trabalho em projetos, também gosto de compartilhar meus conhecimentos e experiências com a comunidade. Sou apaixonada por aprendizado contínuo e estou sempre em busca de novas oportunidades para expandir meu repertório.</p>
                     <p>Se você estiver interessada em colaborar em um projeto ou tiver alguma pergunta, sinta-se à vontade para entrar em contato comigo. Estou animada para conhecer novas pessoas, explorar novas ideias e enfrentar novos desafios.</p>
                     <p>Obrigada por visitar meu portfólio e espero que você aprecie meu trabalho!</p>
+                    <!-- Mais conteúdo sobre a experiência e habilidades do profissional -->
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Seção "Projetos" -->
     <section id="projects">
         <div class="projects-title">
             <h2>Meus Projetos</h2>
         </div>
         <div class="wrapper-projects">
             <div class="card-projects">
-
+                <!-- Conteúdo do projeto -->
             </div>
             <div class="contentproect">
-                
+                <!-- Conteúdo do projeto -->
             </div>
             <div class="image-project">
                 <img src="./image/" alt="img-converson">              
@@ -115,32 +122,32 @@
                 <a href="Site"></a>
             </div>
         </div>
-      </section>
-      
-
-    <div class="body">
+    </section>
+    
+    <!-- Formulário de contato -->
+    <div class="body-login">
         <div class="veen">
+            <!-- Botões de alternância entre os formulários -->
             <div class="login-btn splits">
-                <!-- Alterado para formulário de contato -->
                 <p>Gostou do meu portfolio?</p>
-                <!-- Texto de pergunta sobre o portfolio -->
                 <button class="active">Enviar</button>
-                <!-- Botão para enviar comentário -->
             </div>
             <div class="rgstr-btn splits">
                 <p>Envie o seu comentário</p>
+                <!-- Campo de mensagem -->
                 <div class="message">
                     <textarea name="message" required></textarea>
                     <label>Mensagem</label>
                 </div>
                 <button>Enviar Comentário</button>
             </div>
-            
+            <!-- Formulário de contato -->
             <div class="wrapper">
-                <!-- Alterado para formulário de contato -->
                 <form id="contato" tabindex="500">
+                    <!-- Título do formulário -->
                     <h3 style="white-space: nowrap;">Gostou? Entre em contato comigo.</h3>
-                                        <div class="name">
+                    <!-- Campos de nome, e-mail e mensagem -->
+                    <div class="name">
                         <input type="name" name="">
                         <label>Nome</label>
                     </div>
@@ -152,15 +159,15 @@
                         <label for="message">Mensagem:</label>
                         <textarea id="message" required></textarea>
                     </div>
+                    <!-- Botão de envio -->
                     <div class="submit">
                         <button class="dark">Enviar</button>
                     </div>
                 </form>
-                                           
-
             </div>
         </div>
     </div>
+    <!-- Scripts para interatividade -->
     <script src='main.js'></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="slick/slick.min.js"></script>
