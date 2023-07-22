@@ -30,6 +30,72 @@ body {
     font-family: 'poppins', sans-serif;
 }
 /* Estilização da seção 'person' */  
+/* Estilização da barra de navegação */
+.navbar {
+  background-color: #977b66; /* Definir o background como transparente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2px;
+  height: 1px; /* Ajuste a altura da barra de navegação  */
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: var(--color-brown02);
+  font-size: 1.6rem;
+}
+.navbar li {
+  padding: 10px;
+}
+
+.navbar a {
+  color: var(--color-brown);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: var(--color-beige);
+}
+.navbar .contact-btn {
+
+  background: var(--color-brown02);
+  color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* Estilização do botão "Contato" no hover */
+.navbar .contact-btn:hover {
+  background: var(--color-brown);
+  color: var(--color-white);
+  transition: 0.3s;
+}
+/* Estilização do botão de contato na barra de navegação */
+.contact-btn {
+  background-color: var(--color-beige);
+  color: var(--color-black);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-btn:hover {
+  background-color: var(--color-brown);
+  color: var(--color-brown);
+}
+
 #person {
     height: 100vh;
     width: 100%;
