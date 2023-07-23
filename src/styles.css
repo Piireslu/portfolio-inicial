@@ -108,18 +108,89 @@ h1{
   color: #493736;
   margin: 20px 0px 20px;
   font-size: 75px;
+  transform: scale(1);
 }
 
 h4{
   color: #9b746a;
   letter-spacing: 2px;
   font-size: 20px;
+  
 }
 
 h3{
   color: #000000;
   font-size: 25px;
   margin-bottom: 50px;
+}
+
+#form h3 span {
+  display: inline;
+  
+}
+
+/* Estilização da seção de stacks na seção 'person' */  
+.stack-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6rem;
+  float: left;
+}
+/* Estilização do conteúdo de stacks na seção 'person' */  
+.stacks-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  filter: brightness(0.8);
+}
+/* Estilização da lista de stacks */  
+.stack-content h3 {
+  color: var(--color-brown);
+  font-size: 1.15rem;
+  margin-left: 20px;
+}
+/* Estilização dos itens da lista de stacks */  
+.stacks {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+/* Estilização das imagens nos itens da lista de stacks */  
+.stacks ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+}
+/* Estilização das imagens nos itens da lista de stacks */
+.stacks ul li img {
+  width: 30px;
+  height: auto;
+  transition: transform .3s ease;
+}
+/* Estilização do efeito de hover nas imagens dos itens da lista de stacks */
+.stacks ul li div img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* Estilização do efeito de hover nas divs dos itens da lista de stacks */
+.stacks ul li div:hover::after {
+  content: attr(data);
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  color: var(--color-black);
+}
+.stacks-content.fadeIn {
+  opacity: 0;
+  animation: fadeIn .5s ease forwards;
+  animation-delay: 2s;
 }
 
 #person {
@@ -206,71 +277,11 @@ h3{
   animation: fadeIn 0.5s ease forwards;
   animation-delay: 2s;
 }
-
-
-
 /* Estilização da seção de nome na seção 'person' */  
 .person-name {
     margin-top: 11rem;
 }
-/* Estilização da seção de stacks na seção 'person' */  
-.stack-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 6rem;
-    float: left;
-}
-/* Estilização do conteúdo de stacks na seção 'person' */  
-.stacks-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    filter: brightness(0.8);
-}
-/* Estilização da lista de stacks */  
-.stack-content h3 {
-    color: var(--color-brown);
-    font-size: 1.15rem;
-    margin-left: 20px;
-}
-/* Estilização dos itens da lista de stacks */  
-.stacks {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-/* Estilização das imagens nos itens da lista de stacks */  
-.stacks ul li {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 10px;
-    padding: 10px;
-    list-style: none;
-}
-/* Estilização das imagens nos itens da lista de stacks */
-.stacks ul li img {
-    width: 30px;
-    height: auto;
-    transition: transform .3s ease;
-}
-/* Estilização do efeito de hover nas imagens dos itens da lista de stacks */
-.stacks ul li div img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
-/* Estilização do efeito de hover nas divs dos itens da lista de stacks */
-.stacks ul li div:hover::after {
-    content: attr(data);
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    color: var(--color-black);
-}
+
 /* Estilização da seção da foto de perfil */  
 .profile-photo img {
     width: 100%;
@@ -293,11 +304,7 @@ h3{
     border: 4px solid var(--color-brown);
 }
 /* Estilização da animação fadeIn para stacks-content */  
-.stacks-content.fadeIn {
-    opacity: 0;
-    animation: fadeIn .5s ease forwards;
-    animation-delay: 2s;
-}
+
 /* Estilização da animação fadeIn para profile-photo */  
 .profile-photo.fadeIn {
     opacity: 0;
@@ -484,275 +491,8 @@ h3{
     justify-content: center;
 }
 /* Estilização da classe .veen */
-.veen {
-    width: 70%;
-    margin: 100px auto;
-    background: var(--color-gray);
-    min-height: 400px;
-    display: table;
-    position: relative;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
-}
-.veen>div {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: #000000;
-}
-.veen button {
-    background: transparent;
-    display: inline-block;
-    padding: 10px 30px;
-    border: 3px solid #231710;
-    border-radius: 50px;
-    background-clip: padding-box;
-    position: relative;
-    color: #aa9280;
-    transition: all .25s;
-}/* Fim da estilização do botão escuro na classe .veen */
-
-/* Estilização do botão escuro com efeito de movimento na classe .veen */
-.veen button.dark {
-    border-color: var(--color-gray);
-    background: #231710;
-}
-.veen .move button.dark {
-    border-color: #231710;
-    background: #231710;
-}
-/* Estilização dos parágrafos dentro da classe .splits */
-.veen .splits p {
-    font-size: 18px;
-}
-/* Estilização do botão ativo na classe .splits */
-.veen button:active {
-    box-shadow: none;
-}
-
-.veen button:focus {
-    outline: none;
-}
-.veen>.wrapper {
-    position: absolute;
-    width: 40%;
-    height: 120%;
-    top: -10%;
-    left: 5%;
-    background: #fff;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
-    transition: all .5s;
-    color: #303030;
-    overflow: hidden;
-}
-.veen .wrapper>form {
-    padding: 15px 30px 30px;
-    width: 100%;
-    transition: all .5s;
-    background: #fff;
-    width: 100%;
-}
-.veen .wrapper>form:focus {
-    outline: none;
-}
-
-.veen .wrapper #contato {
-    padding-top: 20%;
-    visibility: visible;
-}
-
-.veen .wrapper.move #contato {
-    transform: translateX(-100%);
-    visibility: hidden;
-}
-
-.veen .wrapper>form>div {
-    position: relative;
-    margin-bottom: 15px;
-}
-.veen .wrapper label {
-    position: absolute;
-    top: -7px;
-    font-size: 12px;
-    white-space: nowrap;
-    background: #fff;
-    text-align: left;
-    left: 15px;
-    padding: 0 5px;
-    color: #999;
-    pointer-events: none;
-}
-.veen .wrapper h3 {
-    margin-bottom: 25px;
-}
-
-.veen .wrapper input {
-    height: 40px;
-    padding: 5px 15px;
-    width: 100%;
-    border: solid 1px #999;
-}
-.veen .wrapper input {
-    height: 40px padding: 5px 15px;
-    width: 100%;
-    border: solid 1px #999;
-}
-
-.veen .wrapper input:focus {
-    outline: none;
-    border-color: #231710;
-}
-.veen>.wrapper.move {
-    left: 45%;
-}
-
-.veen>.wrapper.move input:focus {
-    border-color: #231710;
-}
-
-#form h3 span {
-    display: inline;
-}
-
-#projects {
-    background-color: #f5f5f5;
-    padding: 20px;
-}
-
-#projects h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-  
-.carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-  
-.carousel-item {
-    flex-shrink: 0;
-    width: 300px;
-    height: 200px;
-    background-color: #ccc;
-    margin-right: 10px;
-    scroll-snap-align: start;
-}
-  
-.carousel-item {
-  text-align: center;
-  background: #f5f5f5;
-  padding: 40px;
-  margin: 10px;
-}
-  
-.message textarea {
-        width: 100%;
-        box-sizing: border-box;
-        min-height: 100px;
-        resize: relative;
-}
-#projects {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--color-gray);
-    display: flex;
-    flex-direction: column;
-    color: var(--color-brown);
-}
-
-.projects-title{
-    margin: 3rem;
-    padding: 1rem;
-    font-size: 3rem;
-    color: #977b66;
-}
-
-.wrapper-projects{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 500px;
-    margin-top: 2rem;
-    color: #493736;
-}
-
-.card-project{
-    width: 320px;
-    height: 450px;
-    padding: 30px 20px 20px;
-    margin: 0px 10px;
-    background: #493736;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
 
 
-/*Responsividade*/
-@media (max-width: 767px) {
-.veen {
-  padding: 5px;
-  margin: 0;
-  width: 100%;
-  display: block;
-}
-}
-
-.veen>.wrapper {
-  position: relative;
-  height: auto;
-  top: 0;
-  left: 0;
-   width: 100%;
-}
-
-.veen>div {
-  display: inline-block;
-}
-
-.splits {
-  width: 50%;
-  background: #231710;
-  float: left;
-}
-
-.splits button {
-  width: 100%;
-  border-radius: 0;
-  background: #505050;
-  border: 0;
-  opacity: .7;
-}
-
-.splits button.active {
-  opacity: 1;
-}
-
-/* Estilização do botão ativo na classe .splits com fundo de cor #231710 */
-.splits button.active {
-  opacity: 1;
-  background: #231710;
-}
-
-.splits.rgstr-btn button.active {
-  background: #231710;
-}
-
-.splits p {
-  display: none;
-}
-/* Estilização da classe .veen para quando é movida */
-.veen>.wrapper.move {
-  left: 0%;
-}
-
-/* Estilização do input quando preenchido automaticamente pelo navegador */
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-  box-shadow: inset 0 0 0 50px #231710;
-}
 /* Configuração da animação fadeIn para elementos */  
 @keyframes fadeIn {
 0% {
