@@ -47,7 +47,10 @@ nav{
   padding: 45px;
   padding-left: 8%;
   padding-right: 8%;
+
 }
+
+
 
 .logo{
   color: #4b281f;;
@@ -55,6 +58,7 @@ nav{
   cursor: pointer;
   letter-spacing: 1px;
 }
+
 
 span{
   color: #9b746a;
@@ -68,14 +72,14 @@ nav ul li{
 }
 
 nav ul li a{
-  color: #4b281f;
+  color: #8f665e;
   text-decoration: none;
   font-weight: bold;
   text-transform: capitalize;
 }
 
 nav ul li a:hover{
-  color: #9b746a;
+  color: #231710;
   transform: .4s;
 }
 .contact-btn{
@@ -86,11 +90,6 @@ nav ul li a:hover{
   font-weight: bold;
   padding: 10px 25px;
   border-radius: 30px;
-  transition: transform .4s;
-}
-
-.contact-btn:hover{
-  transform: scale(1.2);
 }
 
 .Main{
