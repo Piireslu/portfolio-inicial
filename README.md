@@ -3,7 +3,7 @@
 Bem-vindo ao meu portfólio! Aqui estão alguns dos projetos de desenvolvimento web que trabalhei recentemente. Fique à vontade para explorar e entrar em contato comigo para qualquer oportunidade de colaboração ou feedback.
 <p>
 
-[![Início do Meu Site](./src/screenshots/head.jpeg)](http://localhost:3000)
+[![Início do Meu Site](./src/screenshots/Inicio.jpg)](http://localhost:3000)
 
 ## Projetos
 
