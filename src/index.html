@@ -7,97 +7,94 @@
     <title>Portfólio - Luciana Pires</title>
     <!-- Importa fontes do Google Fonts -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Importa bibliotecas externas (jQuery, Bootstrap, Slick Carousel) -->
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <section>
         <!-- Barra de Navegação -->
-        <nav class="navbar">
+        <div class="navbar">
+            <nav>
+                <h2 class="logo">Portfó<span>lio</span></h2><!--Logo-->
             <ul>
                 <li><a href="#person">Início</a></li>
                 <li><a href="#about">Sobre Mim</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#certifications">Certificações</a></li>
                 <li><a href="#resume">Currículo</a></li>
-                <li><button class="contact-btn">Contato</button></li>
+                
             </ul>
-        </nav>
-        </nav>
-    <!-- Seção para a apresentação pessoal -->
-    <section id="person" style="height: 100vh;">
-        <!-- Conteúdo da seção de apresentação -->
-        <div class="person-content">
-            <!-- Nome, título e descrição do profissional -->
-            <div class="person-name">
-                <h1>Portfólio</h1>
-                <h2>Luciana Pires</h2>
-                <h3>Front-End Developer</h3>
-            </div>
-            <!-- Stacks (Tecnologias) em que a pessoa é especializada -->
-            <div class="stacks-content fadeIn">
-                <div class="stacks">
-                    <!-- Lista de tecnologias com ícones -->
-                    <ul>
-                        <li>
-                            <div data="HTML">
-                                <img src="./svg/html.svg" alt="html-icon">
-                            </div>                       
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <div data="CSS">
-                                <img src="./svg/css.svg" alt="css-icon">
-                            </div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <div data="JS">
-                                <img src="./svg/js.svg" alt="js-icon">
-                            </div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <div data="REACT">
-                                <img src="./svg/react.svg" alt="react-icon">
-                            </div>
-                        </li>
-                    </ul>
+            <a href="#" class="contact-btn">Contato</a>
+            </nav>
+            <div class="Main">
+                <h4>Olá, meu nome é</h4>
+                <h1>Luciana <span>Pires</span></h1>
+                <h3>Eu sou uma desenvolvedora web  Front-End</h3>
+                <div class="stacks-content fadeIn">
+                    <div class="stacks">
+                        <!-- Lista de tecnologias com ícones -->
+                        <ul>
+                            <li>
+                                <div data="HTML">
+                                    <img src="./svg/html.svg" alt="html-icon">
+                                </div>                       
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div data="CSS">
+                                    <img src="./svg/css.svg" alt="css-icon">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div data="JS">
+                                    <img src="./svg/js.svg" alt="js-icon">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div data="REACT">
+                                    <img src="./svg/react.svg" alt="react-icon">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--Main-->
+            <div class="person-background">
+                <div class="profile-photo fadeIn">
+                    <img src="./image/Perfil.jpeg" alt="Foto-perfil">
+                </div>
+                <div class="links">
+                    <a href="https://github.com/piireslu" target="_blank"><img src="./svg/logo-github.svg" alt="icon-github"></a>
+                    <a href="mailto:contatolupires@gmail.com" target="_blank"><img src="./svg/logo-mail.svg" alt="icon-email"></a>
+                    <a href="https://www.linkedin.com/in/-lucianapires" target="_blank"><img src="./svg/logo-linkedin.svg" alt="icon-linkedin"></a>                   
                 </div>
             </div>
-        </div>
-        <!-- Background da seção de apresentação com foto e links sociais -->
-        <div class="person-background">
-            <div class="profile-photo fadeIn">
-                <img src="./image/Perfil.jpeg" alt="Foto-perfil">
-            </div>
-            <div class="links">
-                <a href="https://github.com/piireslu" target="_blank"><img src="./svg/logo-github.svg" alt="icon-github"></a>
-                <a href="mailto:contatolupires@gmail.com" target="_blank"><img src="./svg/logo-mail.svg" alt="icon-email"></a>
-                <a href="https://www.linkedin.com/in/-lucianapires" target="_blank"><img src="./svg/logo-linkedin.svg" alt="icon-linkedin"></a>                   
-            </div>
-        </div>
+        </div><!--background-->
     </section>
 
+
+
     <!-- Seção "Sobre Mim" -->
-    <section id="about">
+    <!-- 
+        
+        <section id="about">
         <div class="background-about">
             <div class="img-wrapper">
-                <!-- Imagem de perfil para "Sobre Mim" -->
+                Imagem de perfil para "Sobre Mim" 
                 <div class="profile-sobre-mim">
                     <img src="./image/Perfil-3.jpeg" alt="Foto-sobre-mim">
                 </div>
             </div>
             <div class="about-content">
-                <!-- Caixa de informações "Sobre Mim" -->
+
                 <div class="speech-bubble">
-                    <!-- Texto de descrição pessoal -->
+
                     <h2>Sobre Mim</h2>
                     <p>Meu nome é Luciana Pires e sou uma desenvolvedora Front-end com paixão pela criação de experiências digitais excepcionais. Nos últimos dois anos, tenho trabalhado com dedicação para aprimorar minhas habilidades e conhecimentos na área, buscando sempre entregar resultados de qualidade e impacto.</p>
                     <p>Minha jornada na área começou com a minha formação em UX/UI Design. Desde então, tenho me dedicado a aprimorar minhas habilidades técnicas e criativas em diversas áreas, incluindo [lista de habilidades relevantes, como design de interface, desenvolvimento web, etc.].</p>
@@ -106,23 +103,22 @@
                     <p>Além do meu trabalho em projetos, também gosto de compartilhar meus conhecimentos e experiências com a comunidade. Sou apaixonada por aprendizado contínuo e estou sempre em busca de novas oportunidades para expandir meu repertório.</p>
                     <p>Se você estiver interessada em colaborar em um projeto ou tiver alguma pergunta, sinta-se à vontade para entrar em contato comigo. Estou animada para conhecer novas pessoas, explorar novas ideias e enfrentar novos desafios.</p>
                     <p>Obrigada por visitar meu portfólio e espero que você aprecie meu trabalho!</p>
-                    <!-- Mais conteúdo sobre a experiência e habilidades do profissional -->
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção "Projetos" -->
+
     <section id="projects">
         <div class="projects-title">
             <h2>Meus Projetos</h2>
         </div>
         <div class="wrapper-projects">
-            <div class="card-projects">
-                <!-- Conteúdo do projeto -->
+  
             </div>
             <div class="contentproect">
-                <!-- Conteúdo do projeto -->
+
             </div>
             <div class="image-project">
                 <img src="./image/" alt="img-converson">              
@@ -136,29 +132,29 @@
         </div>
     </section>
     
-    <!-- Formulário de contato -->
+
     <div class="body-login">
         <div class="veen">
-            <!-- Botões de alternância entre os formulários -->
+
             <div class="login-btn splits">
                 <p>Gostou do meu portfolio?</p>
                 <button class="active">Enviar</button>
             </div>
             <div class="rgstr-btn splits">
                 <p>Envie o seu comentário</p>
-                <!-- Campo de mensagem -->
+
                 <div class="message">
                     <textarea name="message" required></textarea>
                     <label>Mensagem</label>
                 </div>
                 <button>Enviar Comentário</button>
             </div>
-            <!-- Formulário de contato -->
+
             <div class="wrapper">
                 <form id="contato" tabindex="500">
-                    <!-- Título do formulário -->
+
                     <h3 style="white-space: nowrap;">Gostou? Entre em contato comigo.</h3>
-                    <!-- Campos de nome, e-mail e mensagem -->
+
                     <div class="name">
                         <input type="name" name="">
                         <label>Nome</label>
@@ -171,15 +167,14 @@
                         <label for="message">Mensagem:</label>
                         <textarea id="message" required></textarea>
                     </div>
-                    <!-- Botão de envio -->
+
                     <div class="submit">
                         <button class="dark">Enviar</button>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
-    <!-- Scripts para interatividade -->
+    </div>  -->
     <script src='main.js'></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="slick/slick.min.js"></script>
