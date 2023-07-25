@@ -92,14 +92,14 @@ nav ul li a:hover{
   border-radius: 30px;
 }
 
-.Main{
+.main{
   position: absolute;
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
 }
 
-.Main span{
+.main span{
   color: #9b746a;
 }
 
@@ -108,13 +108,6 @@ h1{
   margin: 20px 0px 20px;
   font-size: 75px;
   transform: scale(1);
-}
-
-h4{
-  color: #9b746a;
-  letter-spacing: 2px;
-  font-size: 20px;
-  
 }
 
 h3{
@@ -339,47 +332,45 @@ h3{
 .links img:hover {
     transform: scale(1.2);
 }
+
+
 /* Estilização da seção 'about - Sobre Mim' */  
 .about {
-    width: 100%;
-    padding: 100%;
-    display: flex;
-    color: var(--color-black);
-    background: var(--color-black);
+  display: flex;
 }
-/* Estilização do background da seção 'about' */  
-.background-about {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /* Estilização do background da seção 'sobre mim' com image de fundo  */  
 .background-about {
-    display: flex;
-    background-image: url(./image/backgound-sobre-mim.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./image/backgound-sobre-mim.jpg);
 }
+
+
+.about .background-about {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Alinhe o conteúdo ao lado direito */
+  align-items: flex-start; /* Alinhe o conteúdo ao topo */
+}
+
 /* Estilização do wrapper da imagem na seção 'about' */  
 .img-wrapper {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  width: 40%;
+  display: flex;
+  align-items: center;
 }
 /* Estilização da imagem na seção 'about' */  
 .img-wrapper img {
-    height: 50%;
-    width: 500%;
-}
-  
-#about .background-about {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url(./image/backgound-sobre-mim.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 50%;
+  width: 500%;
 }
 /* Estilização do título da seção 'about' */
 
@@ -394,12 +385,14 @@ h3{
 }
 
    
-#about .about-content {
+about .about-content {
     flex: 1;
     padding: 30px;
+    display: flex;
+    align-items: center;
 }
 /* Estilização do wrapper da imagem na seção 'about' */  
-#about .img-wrapper {
+.about .img-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -410,8 +403,8 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin: 20px 20px;
   border-radius: 50%;
   overflow: hidden;
@@ -419,78 +412,104 @@ h3{
   animation: fadeIn .5s ease-in-out forwards;
   animation-delay: 2s;
   border: 4px solid var(--color-brown03);
+  position: fixed;
+  top: 20px; /* Define a distância do topo */
+  left: 20px; /* Define a distância da esquerda */
+  z-index: 9999;
 }
+
+.profile-sobre-mim::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Estilização da imagem de perfil no 'about' */  
+.profile-sobre-mim img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Estilização do contêiner dos links de mídia social */
+.links-sobre {
+  opacity: 0;
+  animation: fadeIn .5s ease forwards;
+  animation-delay: 2s;
+  position: fixed;
+  bottom: 30px; /* Define a distância da parte inferior da tela */
+  right: 30px; /* Define a distância da direita da tela */
+  text-align: center; /* Centraliza os links horizontalmente */
+}
+
+/* Estilização dos links de mídia social */
+.links-sobre a img {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  transition: transform .3s ease;
+  transform: scale(1);
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+/* Estilização do efeito de hover nos links de mídia social */
+.links-sobre a:hover img {
+  filter: brightness(1);
+}
+
+/* Estilização do efeito de hover nas imagens dos links de mídia social */
+.links-sobre a img:hover {
+  transform: scale(1.2);
+}
+
+
 /* Estilização do conteúdo da seção 'about' com posição relativa */  
 .about-content {
-    position: relative;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  position: relative;
+  color: var(--color-white);
+  opacity: 0;
+  animation: fadeIn .5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+.about-content h1 {
+  font-size: 2rem;
+  position:relative;
+  display: inline-block;
 }
 /* Estilização do before para criar borda externa na seção 'about' */  
 .about-content::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    background-color: var(--color);
-    border-radius: 20px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  background-color: var(--color);
+  border-radius: 20px;
+  z-index: -1;
 }
 /* Estilização do after para criar borda interna na seção 'about' */  
 .about-content::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    border-radius: 10px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 10px;
+  z-index: -1;
 }
   
-/* Estilização da fala no 'about' */  
-.speech-bubble {
-    position: relative;
-
-    border-radius: 10px;
-    padding: 10px;
-    max-width: 80%;
-    margin-bottom: 20px;
-}
-/* Estilização da ponta da fala no 'about' */  
-.speech-bubble::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent #966d68 transparent;
-}
-/* Estilização do parágrafo dentro da fala no 'about' */
-.speech-bubble p {
-    margin-bottom: 15px;
-}
-/* Estilização da imagem de perfil no 'about' */  
-
-
-.profile-sobre-mim::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-/* Estilização da imagem de perfil no 'about' */  
-.profile-sobre-mim img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 /* Estilização da classe .body */
 .body {
     background: #aa9280;
@@ -502,11 +521,7 @@ h3{
     justify-content: center;
 }
 /* Estilização da classe .veen */
-.about-content h1 {
-  font-size: 5rem;
-  position:relative;
-  display: inline-block;
-}
+
 
 .sobre {
   max-width: 80%;
@@ -518,7 +533,7 @@ h3{
 }
 
 /* Estilização do balão de conversa (before) */
-  .sobre::before {
+.sobre::before {
     content: "";
     position: absolute;
     top: 0;
