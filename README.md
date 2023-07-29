@@ -4,6 +4,7 @@ Bem-vindo ao meu portfólio! Aqui estão alguns dos projetos de desenvolvimento 
 <p>
 
 [![Início do Meu Site](./src/screenshots/Inicio.jpg)](http://localhost:3000)
+[![About do Meu Site](./src/screenshots/About.jpg)](http://localhost:3000)
 
 ## Projetos
 
