@@ -106,28 +106,27 @@ nav ul li a:hover{
   color: #9b746a;
 }
 
-h1{
-  color: #231710;
-  margin: 20px 0px 20px;
-  font-size: 75px;
-}
 
-h2{
-  color: #9b746a;
-  letter-spacing: 2px;
-  font-size: 20px;
+.Card > h2 {
+  color: #000000; /* Cor preta para o texto do h2 dentro da classe .Card */
+  font-size: 20px; /* Tamanho da fonte para o h2 dentro da classe .Card */
+  margin-bottom: 10px; /* Espaçamento inferior para o h2 dentro da classe .Card */
 }
 
 h3{
-  color: #fff;
-  font-size: 25px;
+  color: #000000;
+  font-size: 10px;
   margin-bottom: 50px;
 }
-
-#form h3 span {
-  display: inline;
-  
+.title h1{
+  color: #493736;
+  font-size: 30px;
+  margin-top: 50px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
 }
+
 
 .Container-btn form{
   width: 380px;
@@ -160,7 +159,7 @@ h3{
 }
 
 .btn{
-  background-color:#9b746a;
+  background-color: #231710;
   color: #fff;
   text-decoration: none;
   border: 2px solid transparent;
@@ -173,55 +172,134 @@ h3{
 .btn:hover{
   transform: scale(1.2);
 }
- 
 
-
-
-
-
-/* Configuração da animação fadeIn para elementos */  
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.Main{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
 }
-/* Configuração da animação para escrita de texto */  
-@keyframes written_tex {
-  0% {
-    color: transparent;
-  }
-  100% {
-    color: var(--color-brown);
-  }
+
+.Main span{
+  color: #231710;
 }
-/* Configuração da animação para escrita de nome */
-@keyframes written_tex_name {
-    100% {
-      color: var(--color-brown);
-    }
+
+
+.Container-btn form{
+  width: 380px;
+  max-width: 100%;
+  position: relative;
 }
+
+.Container-btn form input:first-child{
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #231710;
+  border-radius: 30px;
+  outline: none;
+}
+
+.Container-btn form input:last-child{
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #231710;
+  color: #fff;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  right: 6px;
+  top: 6px;
   
-@keyframes typing {
-    0% {
-      width: 0;
-      color: transparent;
-    }
-    100% {
-      width: 100%;
-      color: var(--color-black);
-    }
-  }
-/* Responsividade para telas menores que 768px */ 
-@media (max-width: 768px) {
-    /* Estilização da classe .person-content */
-    .person-content {
-      width: 100%;
-    }
 }
+
+button{
+  background-color:#231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 20px;
+  border-radius: 30px;
+  transition: .4s;
   
-  
+}
+
+button:hover{
+  background-color: transparent;
+  border: 2px solid #231710;
+  cursor: pointer;
+}
+
+.Caixa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  flex-wrap: wrap;
+}
+
+.Card {
+  background: #aa9280;
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transform: scale(1); /* Adicionando a transformação de escala */
+}
+.Card:hover {
+  transform: scale(1.1); /* Escala aumentada quando o mouse estiver sobre a imagem */
+}
+
+.Card i{
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin: 0px 0px;
+  color: #231710;
+}
+
+.Card > h2 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px; /* Aumente esse valor para mover o h2 mais abaixo */
+}
+
+.image-container {
+  margin-top: 10px; /* Adicione o valor desejado para ajustar a posição vertical */
+}
+
+.Paragrafo-button {
+  color: #000000;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+/* Ajuste o tamanho da fonte para o parágrafo */
+.Paragrafo-button p {
+  font-size: 14px;
+}
+footer{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.end{
+  position: absolute;
+  color: #000000;
+  font-size: 14px ;
+  padding: 0;
+}
