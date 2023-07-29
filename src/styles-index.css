@@ -81,7 +81,7 @@ nav ul li a:hover{
   color: #231710;
   transform: .4s;
 }
-.contact-btn{
+.contact-btn {
   background-color: #4b281f;
   color: #fff;
   text-decoration: none;
@@ -89,8 +89,12 @@ nav ul li a:hover{
   font-weight: bold;
   padding: 10px 25px;
   border-radius: 30px;
+  transition: transform 0.3s ease; /* Apenas 'transition', sem repetir a palavra */
 }
 
+.contact-btn:hover {
+  transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
+}
 .main{
   position: absolute;
   top: 50%;
@@ -103,15 +107,15 @@ nav ul li a:hover{
 }
 
 h1{
-  color: #dd2a2a;
+  color: #231710;
   margin: 20px 0px 20px;
   font-size: 75px;
   transform: scale(1);
 }
 
 h3 {
-  color: #000000;
-  font-size: 40px; /* Altere o valor para o tamanho desejado */
+  color: #231710;
+  font-size: 25px; /* Altere o valor para o tamanho desejado */
   margin-bottom: 40px;
 }
 
@@ -298,7 +302,7 @@ h3 {
     opacity: 0;
     animation: fadeIn .5s ease-in-out forwards;
     animation-delay: 2s;
-    border: 4px solid var(--color-brown);
+    border: 2px solid var(--color-brown);
 }
 /* Estilização da animação fadeIn para stacks-content */  
 

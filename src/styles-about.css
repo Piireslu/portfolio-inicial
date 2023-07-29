@@ -15,10 +15,12 @@
     --color-brown: #231710;
     --color-brown01: #966d68;
     --color-brown02: #8f665e;
-    --color-brown03: #493736;
+    --color-brown03:#4b281f;
+    --color-brown04: #493736;
     --color-gray: #ddd3ca;
     --color-beige: #aa9280;
     --color-black: #000000;
+
     
 }
 /* Configurações gerais para o documento */  
@@ -81,7 +83,7 @@ nav ul li a:hover{
   color: #231710;
   transform: .4s;
 }
-.contact-btn{
+.contact-btn {
   background-color: #4b281f;
   color: #fff;
   text-decoration: none;
@@ -89,6 +91,11 @@ nav ul li a:hover{
   font-weight: bold;
   padding: 10px 25px;
   border-radius: 30px;
+  transition: transform 0.3s ease; /* Apenas 'transition', sem repetir a palavra */
+}
+
+.contact-btn:hover {
+  transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
 }
 
 .main {
@@ -107,15 +114,19 @@ h1 {
   color: #000000;
   margin: 20px 0px 20px;
   font-size: 25px;
-  transform: scale(1);
+  transition: transform .3s ease;
 }
 
+h1:hover{
+  transform: scale(1.01);
+}
 
 h3 {
   color: #000000;
   font-size: 15px;
   margin-bottom: 50px;
 }
+
 
 #form h3 span {
   display: inline;
@@ -513,7 +524,7 @@ about .about-content {
     justify-content: center;
 }
 /* Estilização da classe .veen */
-
+ 
 
 
 /* Configuração da animação fadeIn para elementos */  
