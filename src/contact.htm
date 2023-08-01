@@ -26,69 +26,63 @@
             </ul>
             <a href="contact.htm" class="contact-btn">Contato</a>
             </nav>
-<section>          
-<div class="container">
-    <div class="contactinfo">
-        <dib>
-            <h2>Contact Info</h2>
-            <ul class="info">
-                <li>
-                    <span><img src="location.png"></span>
-                    <pan>Rua teste<br>
-                        Sao Paulo, Brasil </span>
-                </li>
-                <li>
-                    <span><img src="mail.png"></span>
-                    <pan>contatolupires@gmail.com </span>
-                </li>
-                <li>
-                    <span><img src="call.png"></span>
-                    <pan>(11) 95280-0159</span>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#"></a><img src="./svg/logo-github.svg"></a></li>
-                <li><a href="#"></a><img src="./svg/logo-linkedin.svg"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="contactForm">
-        <h2>Me envie uma mensagem</h2>
-        <div class="formBox">
-            <div class="inputbox w50">
-                <input type="text" name="primeiroNome" required>
-                <span>Primeiro nome</span>
-            </div>
-            <div class="inputbox w50">
-                <input type="text" name="sobrenome" required>
-                <span>Sobrenome</span>
-            </div>
-            <div class="inputbox w50">
-                <input type="text" name="empresa" required>
-                <span>Empresa</span>
-            </div>
-            <div class="inputbox w50">
-                <input type="email" name="email" required>
-                <span>E-mail</span>
-            </div>
-            <div class="inputbox w50">
-                <input type="tel" name="telefone" required>
-                <span>Telefone</span>
-            </div>
-            <div class="inputbox w100">
-                <textarea name="" required></textarea>
-                <span>Deixe sua mensagem inspiradora aqui!</span>
-            </div>
-            <div class="inputbox w100">
-                <input type="submit" value="Enviar">
-            </div>
-        </div>
-    </div>
-    
-</section>  
-    <footer>
-        <p class="end">Por Luciana Pires - Todos os direitos reservados &copy; 2023. Contato: contatolupires@gmail.com</p>
-    </footer>
-</div>
- </section>
-</body>
+            <section>
+                <div class="container">
+                    <div class="contactinfo">
+                        <div>
+                            <h2>Contact Info</h2>
+                            <ul class="info">
+                                <li>
+                                    <span><img src="./svg/icon-perfil.png"></span>
+                                    <span>Luciana Pires</span>
+                                </li>
+                                <li>
+                                    <span><img src="./svg/envelope.png"></span>
+                                    <span>contatolupires@gmail.com</span>
+                                </li>
+                                <li>
+                                    <span><img src="./svg/call.png"></span>
+                                    <span>(11) 95280-0159</span>
+                                </li>
+                            </ul>
+                            <ul class="sci">
+                                <li><a href="https://github.com/piireslu" target="_blank"><img src="./svg/logo-github.svg"></a></li>
+                                <li><a href="https://www.linkedin.com/in/-lucianapires" target="_blank"><img src="./svg/logo-linkedin.svg"></a></li>
+                                <li><a href="mailto:contatolupires@gmail.com" target="_blank"><img src="./svg/logo-mail.svg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="contactForm">
+                        <h2>Me envie uma mensagem</h2>
+                        <form action="contato-admin.php" method="post">
+                            <div class="formBox">
+                                <div class="inputbox w50">
+                                    <input type="text" name="primeiroNome" required>
+                                    <span>Primeiro nome</span>
+                                </div>
+                                <div class="inputbox w50">
+                                    <input type="text" name="sobrenome" required>
+                                    <span>Sobrenome</span>
+                                </div>
+                            </div>
+                            <form action="contato-admin.php" method="post">
+                            <!-- Outros campos do formulário aqui -->
+                            <div class="inputbox w100">
+                                <textarea name="mensagem" required></textarea>
+                                <span>Deixe sua mensagem inspiradora aqui!</span>
+                            </div>
+                            <div class="inputbox w100">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <footer>
+                <p class="end">Por Luciana Pires - Todos os direitos reservados &copy; 2023. Contato: contatolupires@gmail.com</p>
+            </footer>
+        </body>
+        </html>

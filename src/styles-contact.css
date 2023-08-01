@@ -94,12 +94,76 @@ nav ul li a:hover{
   transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
 }
 
+.btn:hover{
+  transform: scale(1.2);
+}
+
+.contactForm {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 450px;
+  height: calc(100% - 80px);
+  background: #866259;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contactForm .inputbox {
+  margin-bottom: 20px;
+}
+
+.contactForm .inputbox input[type="text"],
+.contactForm .inputbox input[type="email"],
+.contactForm .inputbox input[type="tel"],
+.contactForm .inputbox textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-white); /* Altera o fundo para branco */
+  color: var(--color-brown);
+}
+
+.contactForm .inputbox textarea {
+  resize: vertical;
+  color: var(--color-black); /* Altera a cor do texto para preto */
+  background: var(--color-white); /* Altera o fundo para branco */
+}
+
+.contactForm .inputbox input[type="submit"] {
+  cursor: pointer;
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+
+.contactForm .inputbox input[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
 section{
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background:#866259;
+  min-height: 20vh;
+
 }
  section::before{
   content: '';
@@ -108,16 +172,125 @@ section{
   left: 0;
   width: 50%;
   height: 100%;
-  background: #aa9280 ;
+ }
+
+ section .container{
+  position: relative;
+  min-width: 900px;
+  min-height: 400px;
+  display: flex;
+  z-index: 900;
+ }
+
+ section .container .contactinfo{
+  position: absolute;
+  top: 80px;
+  width: 250px;
+  height: calc(100% - 80px);
+  background: #866259;
+  left: 60px;
+  z-index: 2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2);
+ }
+
+ section .container .contactinfo h2{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+ }
+
+ section .container .contactinfo .info{
+  position: relative;
+  margin: 20px 0;
+ }
+
+ section .container .contactinfo .info li{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+ }
+
+ section .container .contactinfo .info li span:nth-child(1){
+  width: 30px;
+  min-width: 30px;
+ }
+ section .container .contactinfo .info li span:nth-child(1) img{
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5;
+ }
+
+ section .container .contactinfo .info li span:nth-child(2){
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+
+ }
+ section .container .contactinfo .info li span:nth-child(1) img,
+ section .container .contactinfo .info li span:nth-child(2){
+  opacity: 1;
+
  }
 
 
-
-
-
-.btn:hover{
-  transform: scale(1.2);
+ section .container .contactForm .formBox .inputbox span {
+  color: #fff;
+  font-size: 15px;
 }
+
+.contactForm .inputbox.w100 span {
+  color: #fff; /* Altera a cor do texto para preto (#000000) */
+  font-size: 15px; /* Define o tamanho da fonte para 1px */
+}
+
+section .container .contactinfo .sci{
+  position: relative;
+  display: flex;
+
+}
+section .container .contactinfo .sci li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+section .container .contactinfo .sci li img {
+  width: 40px; /* Altere esse valor para diminuir ou aumentar o tamanho dos ícones */
+}
+
+section .container .contactinfo .sci li a{
+  text-decoration: none;
+}
+
+section .container .contactinfo .sci li a img{
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+section .container .contactinfo .sci li:hover a img{
+  opacity: 1;
+}
+
+
+section .container .contactForm{
+  position: absolute;
+  padding: 70px 50px;
+  background:  #4b281f;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 150px);
+  height: 100%;
+  z-index: 1;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0);
+}
+
 
 
 footer {
