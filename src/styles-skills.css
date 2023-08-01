@@ -32,7 +32,7 @@ body {
 }
 /* Estilização da barra de navegação */
 .navbar {
-  background-image: url(./image/backgound-projects.jpg);
+  background-image: url(./image/backgound-skills.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -284,7 +284,8 @@ button:hover{
 
 /* Ajuste o tamanho da fonte para o parágrafo */
 .Paragrafo-button p {
-  font-size: 14px;
+  margin: 1rem;
+  font-size: 12px;
 }
 footer{
   position: relative;
