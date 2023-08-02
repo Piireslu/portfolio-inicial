@@ -3,8 +3,12 @@
 Bem-vindo ao meu portfólio! Aqui estão alguns dos projetos de desenvolvimento web que trabalhei recentemente. Fique à vontade para explorar e entrar em contato comigo para qualquer oportunidade de colaboração ou feedback.
 <p>
 
-[![Início do Meu Site](./src/screenshots/Inicio.jpg)](http://localhost:3000)
-[![About do Meu Site](./src/screenshots/About.jpg)](http://localhost:3000)
+[![Início](./src/screenshots/inicio.jpg)](http://localhost:3000)
+[![About](./src/screenshots/about.jpg)](http://localhost:3000)
+[![Habilidades](./src/screenshots/habilidades.jpg)](http://localhost:3000)
+[![Projetos](./src/screenshots/projetos.jpg)](http://localhost:3000)
+[![Certificados](./src/screenshots/certificado.jpg)](http://localhost:3000)
+[![Contato](./src/screenshots/contato.jpg)](http://localhost:3000)
 
 ## Projetos
 
