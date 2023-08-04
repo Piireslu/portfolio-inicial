@@ -301,10 +301,10 @@ h3 {
 
 .profile-photo {
   position: absolute;
-  top: 350px; /* Ajuste a posição vertical conforme necessário */
+  top: 450px; /* Ajuste a posição vertical conforme necessário */
   right: 20px; /* Ajuste a posição horizontal conforme necessário */
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   opacity: 0;
@@ -326,7 +326,7 @@ h3 {
 }
 
 .other-content {
-  font-size: 15px;
+  font-size:20px;
   text-align: left; /* Alinha o texto à esquerda */
   max-width: 800px; /* Define a largura máxima do conteúdo */
   margin: 0 auto; /* Centraliza horizontalmente o conteúdo */
