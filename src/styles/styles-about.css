@@ -15,10 +15,12 @@
     --color-brown: #231710;
     --color-brown01: #966d68;
     --color-brown02: #8f665e;
-    --color-brown03: #493736;
+    --color-brown03:#4b281f;
+    --color-brown04: #493736;
     --color-gray: #ddd3ca;
     --color-beige: #aa9280;
     --color-black: #000000;
+
     
 }
 /* Configurações gerais para o documento */  
@@ -33,7 +35,7 @@ body {
 /* Estilização da seção 'person' */  
 /* Estilização da barra de navegação */
 .navbar {
-  background-image: url(./image/backgound-3.jpg);
+  background-image: url(/src/image/backgound-sobre-mim.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -95,28 +97,34 @@ nav ul li a:hover{
 .contact-btn:hover {
   transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
 }
-.main{
+
+.main {
   position: absolute;
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
+  margin-top: 50px; /* Adicionando uma margem de 50px na parte superior */
 }
 
 .main span{
   color: #9b746a;
 }
 
-h1{
-  color: #231710;
+h1 {
+  color: #000000;
   margin: 20px 0px 20px;
-  font-size: 75px;
-  transform: scale(1);
+  font-size: 25px;
+  transition: transform .3s ease;
+}
+
+h1:hover{
+  transform: scale(1.01);
 }
 
 h3 {
-  color: #231710;
-  font-size: 25px; /* Altere o valor para o tamanho desejado */
-  margin-bottom: 40px;
+  color: #000000;
+  font-size: 15px;
+  margin-bottom: 50px;
 }
 
 
@@ -285,25 +293,29 @@ h3 {
 
 /* Estilização da seção da foto de perfil */  
 .profile-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* Estilização da seção da foto de perfil */  
 
 .profile-photo {
-position: absolute;
-top: 200px; /* Ajuste a posição vertical conforme necessário */
-right: 150px; /* Ajuste a posição horizontal conforme necessário */
-width: 250px;
-height: 250px;
-border-radius: 50%;
-overflow: hidden;
-opacity: 0;
-animation: fadeIn .5s ease-in-out forwards;
-animation-delay: 2s;
-border: 3px solid var(--color-brown);
+  position: absolute;
+  top: 350px; /* Ajuste a posição vertical conforme necessário */
+  right: 20px; /* Ajuste a posição horizontal conforme necessário */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn .5s ease-in-out forwards;
+  animation-delay: 2s;
+  border: 3px solid var(--color-brown);
 }
+
+
+
+
 /* Estilização da animação fadeIn para stacks-content */  
 
 /* Estilização da animação fadeIn para profile-photo */  
@@ -312,11 +324,65 @@ border: 3px solid var(--color-brown);
     animation: fadeIn .5s ease forwards;
     animation-delay: 2s;
 }
+
+.other-content {
+  font-size: 15px;
+  text-align: left; /* Alinha o texto à esquerda */
+  max-width: 800px; /* Define a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente o conteúdo */
+}
+
+
+.other-content h2 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.other-content img {
+  width: 200px;
+  height: auto;
+}
+.sobre-mim {
+  flex-grow: 1; /* Ocupa todo o espaço vertical disponível */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o conteúdo no topo */
+  text-align: left; /* Alinha o texto à esquerda */
+}
 /* Estilização da animação fadeIn para links */ 
 .links {
-    opacity: 0;
-    animation: fadeIn .5s ease forwards;
-    animation-delay: 2s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  text-align: right;
+}
+.links h4 {
+  color: #493736;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.links p {
+  color: #000000;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.links span {
+  font-weight: bold;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.links img {
+  width: 30px;
+  height: 30px;
 }
 /* Estilização dos links de mídia social */  
 .links a img {
@@ -343,6 +409,13 @@ border: 3px solid var(--color-brown);
   display: flex;
 }
 
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /* Estilização do background da seção 'sobre mim' com image de fundo  */  
 .background-about {
   background-size: cover;
@@ -351,18 +424,22 @@ border: 3px solid var(--color-brown);
   display: flex;
   height: 100vh;
   width: 100%;
-  background-image: url(./image/backgound-3.jpg);
+  background-image: url(/src/image/backgound-sobre-mim.jpg);
 }
 
 
-.about .background-about {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end; /* Alinhe o conteúdo ao lado direito */
-  align-items: flex-start; /* Alinhe o conteúdo ao topo */
+.about .about-content {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  position: relative;
+  color: var(--color-white);
+  opacity: 0;
+  animation: fadeIn .5s ease-in-out forwards;
+  animation-delay: 2s;
+  text-align: left; /* Alinhe o texto à esquerda */
 }
 
 /* Estilização do wrapper da imagem na seção 'about' */  
@@ -406,7 +483,7 @@ about .about-content {
 
 
 /* Estilização do conteúdo da seção 'about' com posição relativa */  
-.about-content {
+.about .about-content {
   width: 80%;
   max-width: 400px;
   padding: 20px;
@@ -417,23 +494,13 @@ about .about-content {
   opacity: 0;
   animation: fadeIn .5s ease-in-out forwards;
   animation-delay: 2s;
+  text-align: right; /* Esta propriedade alinha o texto à direita */
 }
 .about-content h1 {
   white-space: nowrap;
   font-size: 1.6rem;
 }
-/* Estilização do before para criar borda externa na seção 'about' */  
-.about-content::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: calc(100% + 40px);
-  height: calc(100% + 40px);
-  background-color: var(--color);
-  border-radius: 20px;
-  z-index: -1;
-}
+
 /* Estilização do after para criar borda interna na seção 'about' */  
 .about-content::after {
   content: "";
@@ -457,9 +524,7 @@ about .about-content {
     justify-content: center;
 }
 /* Estilização da classe .veen */
-
-
-
+ 
 
 
 /* Configuração da animação fadeIn para elementos */  

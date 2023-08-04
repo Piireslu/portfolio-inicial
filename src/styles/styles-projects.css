@@ -32,7 +32,7 @@ body {
 }
 /* Estilização da barra de navegação */
 .navbar {
-  background-image: url(./image/backgound-skills.jpg);
+  background-image: url(/src/image/backgound-projects.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -242,8 +242,8 @@ button:hover{
 }
 
 .Card {
-  background:  #572c2a79;
-  height: 300px;
+  background: #4d2b223b;
+  height: 340px;
   width: 250px;
   border-radius: 20px;
   margin: 15px;
@@ -280,12 +280,55 @@ button:hover{
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
+  display: flex; /* Tornando o elemento um flex container */
+  justify-content: space-between; /* Distribuindo os botões igualmente no eixo horizontal */
 }
+.Paragrafo-button button {
+  background-color: #231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: .4s;
+  flex: 1; /* Ocupar espaço igualmente dentro do container flex */
+  margin-right: 10px; /* Margem entre os botões (pode ajustar conforme necessário) */
+}
+
 
 /* Ajuste o tamanho da fonte para o parágrafo */
 .Paragrafo-button p {
   margin: 1rem;
   font-size: 12px;
+}
+
+.show-credential-btn {
+  background-color: #231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 8px 15px; /* Ajuste o valor do padding para reduzir o tamanho do botão */
+  border-radius: 20px;
+  transition: .4s;
+  position: absolute; /* Posiciona o botão de forma absoluta em relação ao card */
+  bottom: 15px; /* Ajuste o valor de "bottom" para posicionar verticalmente */
+  left: 20px; /* Ajuste o valor de "left" para posicionar horizontalmente no lado esquerdo */
+}
+
+.show-credential-site {
+  background-color: #231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 8px 15px; /* Ajuste o valor do padding para reduzir o tamanho do botão */
+  border-radius: 20px;
+  transition: .4s;
+  position: absolute; /* Posiciona o botão de forma absoluta em relação ao card */
+  bottom: 15px; /* Ajuste o valor de "bottom" para posicionar verticalmente */
+  left: 150px; /* Ajuste o valor de "left" para posicionar horizontalmente no lado esquerdo */
 }
 footer{
   position: relative;
